@@ -1,0 +1,3 @@
+const menu=document.getElementById('menu');const nav=document.getElementById('nav');if(menu&&nav){menu.addEventListener('click',()=>nav.classList.toggle('open'));}
+const newsletter=document.getElementById('newsletter');if(newsletter){newsletter.addEventListener('submit',e=>{e.preventDefault();document.getElementById('newsletter-msg').textContent='Thanks for your interest! This demo does not store your email.';newsletter.reset();});}
+const contact=document.getElementById('contact-form');if(contact){contact.addEventListener('submit',e=>{e.preventDefault();document.getElementById('contact-msg').textContent='Thanks! This demo form is not connected to an inbox.';contact.reset();});}
